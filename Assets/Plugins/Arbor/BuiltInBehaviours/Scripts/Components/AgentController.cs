@@ -535,6 +535,7 @@ namespace Arbor
 				if (_Agent != null)
 				{
 					agentTransform = _Agent.transform;
+					_StartPosition = agentTransform.position;
 				}
 				else
 				{
@@ -1156,8 +1157,11 @@ namespace Arbor
 				this.TryGetComponent<NavMeshAgent>(out _Agent);
 			}
 
-			agentTransform = _Agent.transform;
-			_StartPosition = agentTransform.position;
+			if (_Agent != null)
+			{
+				agentTransform = _Agent.transform;
+				_StartPosition = agentTransform.position;
+			}
 		}
 
 #if ARBOR_DOC_JA
@@ -1352,6 +1356,9 @@ namespace Arbor
 #endif
 		public bool MoveTo(float speed, float stoppingDistance, Vector3 targetPosition)
 		{
+			if (_Agent == null)
+				return false;
+
 			_MovingMode = MovingMode.Follow;
 			_TargetPosition = targetPosition;
 			_Agent.speed = speed;
@@ -1603,6 +1610,9 @@ namespace Arbor
 #endif
 		public bool Escape(float speed, float distance, Vector3 targetPosition, float distanceToCorner)
 		{
+			if (_Agent == null)
+				return false;
+
 			_MovingMode = MovingMode.Escape;
 			_TargetPosition = targetPosition;
 			_EscapeDistance = distance;
@@ -1957,6 +1967,9 @@ namespace Arbor
 
 		void Update()
 		{
+			if (_Agent == null)
+				return;
+
 			bool currentMoving = IsMoving();
 			if (isMoving != currentMoving)
 			{

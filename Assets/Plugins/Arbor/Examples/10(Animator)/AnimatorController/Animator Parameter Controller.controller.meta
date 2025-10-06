@@ -6,3 +6,11 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112239
+  packageName: 'Arbor 3: FSM & BT Graph Editor'
+  packageVersion: 3.10.6
+  assetPath: Assets/Plugins/Arbor/Examples/10(Animator)/AnimatorController/Animator
+    Parameter Controller.controller
+  uploadId: 753360

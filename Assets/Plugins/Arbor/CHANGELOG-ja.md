@@ -4,6 +4,55 @@
 
 フォーマットは[Keep a Changelog](http://keepachangelog.com/)に基づいています。
 
+## [3.10.6] - 2025-05-01
+
+### 修正
+
+#### Unity6対応
+
+- グラフのスクリーンショットがUnity6以降で動作しない不具合を修正
+
+
+
+## [3.10.5] - 2025-01-19
+
+### 改善
+
+#### スクリプト
+
+- FlexibleComponent<T>にSerializableを適用
+
+### 修正
+
+#### スクリプト
+
+- Object.InstantiateAsyncで例外が発生していた不具合を修正
+- 意図しないキャッシュによりメモリにグラフ関連データのインスタンスが残り続ける不具合を修正
+
+
+
+## [3.10.4] - 2024-10-21
+
+### 修正
+
+#### Unity6000.0.11f1以降対応
+
+- Rigidbody2D.velocityがRigidbody2D.linearVelocityにリネームされたことによる警告修正
+- Rigidbody2D.dragがRigidbody2D.linearDampingにリネームされたことによる警告修正
+- Rigidbody2D.angularDragがRigidbody2D.angularDampingにリネームされたことによる警告修正
+
+
+
+## [3.10.3] - 2024-06-17
+
+### 修正
+
+#### 組み込みComponent
+
+- [AgentController](https://arbor-docs.caitsithware.com/ja/3.10.2/manual/builtin/agentcontroller.html) : Awake呼び出し時にAgentが割り当てられていないとNullReferenceExceptionがスローされる不具合を修正
+
+
+
 ## [3.10.2] - 2024-04-24
 
 ### 修正

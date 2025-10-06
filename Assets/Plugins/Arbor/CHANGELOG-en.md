@@ -4,6 +4,56 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [3.10.6] - 2025-05-01
+
+### Fixed
+
+#### Compatible with Unity6
+
+- Fixed a bug where graph screenshots did not work on Unity 6 and later.
+
+
+
+## [3.10.5] - 2025-01-19
+
+### Improved
+
+#### Scripts
+
+- Applying Serializable to FlexibleComponent<T>
+
+### Fixed
+
+#### Scripts
+
+- Fixed a bug that caused an exception to occur in Object.InstantiateAsync.
+- Fixed a bug that caused instances of graph-related data to remain in memory due to unintended caching.
+
+
+
+
+## [3.10.4] - 2024-10-21
+
+### Fixed
+
+#### Compatible with Unity6000.0.11f1 or later
+
+- Fixed warning due to Rigidbody2D.velocity being renamed to Rigidbody2D.linearVelocity
+- Fixed warning due to Rigidbody2D.drag being renamed to Rigidbody2D.linearDamping
+- Fixed warning due to Rigidbody2D.angularDrag being renamed to Rigidbody2D.angularDamping
+
+
+
+## [3.10.3] - 2024-06-17
+
+### Fixed
+
+#### Built in Component
+
+- [AgentController](https://arbor-docs.caitsithware.com/en/3.10.2/manual/builtin/agentcontroller.html) : Fixed a bug where a NullReferenceException would be thrown if no Agent was assigned when Awake was called.
+
+
+
 ## [3.10.2] - 2024-04-24
 
 ### Fixed

@@ -5,3 +5,10 @@ AssemblyDefinitionImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112239
+  packageName: 'Arbor 3: FSM & BT Graph Editor'
+  packageVersion: 3.10.6
+  assetPath: Assets/Plugins/Arbor/Core/Scripts/Arbor.Core.asmdef
+  uploadId: 753360

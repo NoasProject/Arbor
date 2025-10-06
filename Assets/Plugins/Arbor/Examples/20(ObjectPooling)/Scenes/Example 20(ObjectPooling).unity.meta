@@ -5,3 +5,10 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112239
+  packageName: 'Arbor 3: FSM & BT Graph Editor'
+  packageVersion: 3.10.6
+  assetPath: Assets/Plugins/Arbor/Examples/20(ObjectPooling)/Scenes/Example 20(ObjectPooling).unity
+  uploadId: 753360

@@ -82,3 +82,10 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112239
+  packageName: 'Arbor 3: FSM & BT Graph Editor'
+  packageVersion: 3.10.6
+  assetPath: Assets/Plugins/Arbor/Internal/Editor/Assemblies/2020.2/ArborEditor.UnityEditorBridge.dll
+  uploadId: 753360
